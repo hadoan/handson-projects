@@ -1,0 +1,47 @@
+@page "/todolist"
+@using blazor_todo.Dto;
+@using blazor_todo.Services;
+
+<h1>My Todo List</h1>
+
+@if (todoList == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Completed</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var todo in todoList)
+            {
+                <tr>
+                    <td>@todo.id</td>
+                    <td>@todo.title</td>
+                    <td>
+                        <input type="checkbox" checked="@todo.completed" />
+                    </td>
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+    List<Todo> todoList= new List<Todo>();
+
+    protected override async Task OnInitAsync()
+    {
+        var service = new TodoApiService();
+        todoList = await service.GetAll();
+        System.Console.WriteLine("Todo list count: "+ todoList.Count);
+    }
+}
