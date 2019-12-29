@@ -1,0 +1,6 @@
+curl http://localhost:5000/api/todoquery/getall
+curl http://localhost:5000/api/todoquery/getsummary
+curl -d "id='5fbb1ccc-25fd-4853-b651-51d779c2fe9b'" -X POST http://localhost:5000/api/todocommand/completetodo
+
+curl -d "id='5fbb1ccc-25fd-4853-b651-51d779c2fe9b'" -X POST http://localhost:5000/api/todocommand/completetodo
+curl -d "" -X POST "http://localhost:5000/api/todocommand/addtodo?name=manh ha"
