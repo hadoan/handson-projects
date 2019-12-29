@@ -15,7 +15,6 @@ namespace CqrsTodo
         }
         public async Task<bool> Handle(CompleteTodoCommand request, CancellationToken cancellationToken)
         {
-
             var todo = await _context.Todoes.FindAsync(request.Id);
             todo.Completed = true;
             _context.Todoes.Update(todo);
