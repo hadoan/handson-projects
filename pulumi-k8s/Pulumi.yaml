@@ -1,0 +1,3 @@
+name: pulumi-k8s
+runtime: dotnet
+description: A minimal Kubernetes C# Pulumi program
