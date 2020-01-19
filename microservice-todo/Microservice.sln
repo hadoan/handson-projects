@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cqrs-todo", "cqrs-todo\cqrs-todo.csproj", "{DD9F6435-1AD4-4A13-8233-D8C13171F051}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "eventbus", "eventbus", "{B36F584A-F4E3-4BF3-857E-5C297855FE31}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus", "eventbus\EventBus\EventBus.csproj", "{FA8DA759-CD55-43C5-B630-52258A349EF0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBusRabbitMQ", "eventbus\EventBusRabbitMQ\EventBusRabbitMQ.csproj", "{A35E92CC-87A7-473F-B6FB-43DF56F56953}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todo-commands", "todo.commands\todo-commands.csproj", "{EA15F663-1F4F-4A81-A811-3B567AF1A23A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todo-queries", "todo.queries\todo-queries.csproj", "{0D2B0B25-C6FD-475F-A909-63055D185B10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD9F6435-1AD4-4A13-8233-D8C13171F051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD9F6435-1AD4-4A13-8233-D8C13171F051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD9F6435-1AD4-4A13-8233-D8C13171F051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD9F6435-1AD4-4A13-8233-D8C13171F051}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA8DA759-CD55-43C5-B630-52258A349EF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA8DA759-CD55-43C5-B630-52258A349EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA8DA759-CD55-43C5-B630-52258A349EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA8DA759-CD55-43C5-B630-52258A349EF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A35E92CC-87A7-473F-B6FB-43DF56F56953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A35E92CC-87A7-473F-B6FB-43DF56F56953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A35E92CC-87A7-473F-B6FB-43DF56F56953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A35E92CC-87A7-473F-B6FB-43DF56F56953}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA15F663-1F4F-4A81-A811-3B567AF1A23A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA15F663-1F4F-4A81-A811-3B567AF1A23A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA15F663-1F4F-4A81-A811-3B567AF1A23A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA15F663-1F4F-4A81-A811-3B567AF1A23A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D2B0B25-C6FD-475F-A909-63055D185B10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D2B0B25-C6FD-475F-A909-63055D185B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D2B0B25-C6FD-475F-A909-63055D185B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D2B0B25-C6FD-475F-A909-63055D185B10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FA8DA759-CD55-43C5-B630-52258A349EF0} = {B36F584A-F4E3-4BF3-857E-5C297855FE31}
+		{A35E92CC-87A7-473F-B6FB-43DF56F56953} = {B36F584A-F4E3-4BF3-857E-5C297855FE31}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FCEC8039-26A2-4BC8-A81B-D1059FE64A29}
+	EndGlobalSection
+EndGlobal
