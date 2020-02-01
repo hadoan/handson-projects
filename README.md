@@ -1,1 +1,1 @@
-# vooy-media
+# Hands-on projects
